@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertidor de Longitud</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Convertidor de Longitud</h1>
+      <input type="number" id="inputAmount" placeholder="Ingrese la cantidad" />
+      <select id="inputUnit">
+        <option value="metro">Metros</option>
+        <option value="centimetro">Centímetros</option>
+        <option value="milimetro">Milímetros</option>
+      </select>
+      <button onclick="convertLength()">Convertir</button>
+
+      <div class="results">
+        <p>Metros: <span id="metroValue">0 m</span></p>
+        <p>Centímetros: <span id="centimetroValue">0 cm</span></p>
+        <p>Milímetros: <span id="milimetroValue">0 mm</span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
